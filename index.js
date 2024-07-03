@@ -34,7 +34,7 @@ http.createServer((req,res)=>{
 //  }))
  const fs=require('fs');
  const path=require('path');
-const { error } = require('console');
+
  const dirPath=path.join(__dirname,'files')
   // fs.writeFileSync(`${dirPath}/one.txt`,"hello i am learning the node js ");
   // fs.writeFile(`${dirPath}/fdd.txt`,"hello i am goat",(error)=>{
@@ -62,3 +62,44 @@ const { error } = require('console');
 // fs.unlink(`${dirPath}/hello3.txt`,()=>{
 //   console.log('file deleted sucessfully');
 // })
+
+// const createdata=(data,file)=>{
+//    return fs.writeSync(file,data);
+// }
+// createdata('hello world','fi.txt');\
+// const{properCae,Slugify,truncate}=require('./String.js');
+// const Cart={
+//   name:"copy",
+//   price:100
+// }
+
+// const events=require('events');
+// const eventEmitter=new events.EventEmitter();
+// const hi=(Cart)=>{
+//   const totaldata=0.13*Cart?.price+Cart?.price;
+//   console.log(`your price of the cart after discount is ${totaldata}`);
+// }
+
+// //create and listen
+// eventEmitter.on("Scream",(item)=>{
+//   hi(item)
+// });
+
+// //fire
+// eventEmitter.emit("Scream",Cart);
+
+const properCase=require('proper-upper-case')
+const convert=(test)=>{
+  return properCase(test);
+}
+
+const result= convert('subarna dahal')
+console.log(result);
+
+  //slugify(slug generate)
+  //lodash(truncate)
+  //bycript
+
+  //password encrypt
+  //password dycript
+  //nodemailer
