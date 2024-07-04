@@ -88,18 +88,81 @@ http.createServer((req,res)=>{
 // //fire
 // eventEmitter.emit("Scream",Cart);
 
-const properCase=require('proper-upper-case')
-const convert=(test)=>{
-  return properCase(test);
-}
+// const properCase=require('proper-upper-case')
+// const convert=(test)=>{
+//   return properCase(test);
+// }
 
-const result= convert('subarna dahal')
-console.log(result);
+// const result= convert('subarna dahal')
+// console.log(result);
 
-  //slugify(slug generate)
+//   //slugify(slug generate)
+// const slugify=require('slugify');
+//  var changeddata='hello i am god of the world';
+
+// const slugfunction=(data)=>{
+//   return slugify(data);
+// }
+// console.log(slugfunction(changeddata));
+
   //lodash(truncate)
+//   const truncate=require('truncate');
+//   const value='hello it is beatufull day today i am bleesed that this day i am leaving';
+
+//   const truncates=(data,length)=>{
+//  return truncate(data,length);
+//   }
+
+
+//  console.log(truncates(value,20));
   //bycript
 
-  //password encrypt
-  //password dycript
-  //nodemailer
+
+
+//password encrypt
+// const bcrypt = require('bcrypt');
+
+// const data = "subarna";
+
+// const changedfun = async (value) => {
+//   try {
+//     return await bcrypt.hash(value, 10);
+//   } catch (e) {
+//     console.log('error', e);
+//   }
+// };
+
+// const comparefunction = async (planedata, hashevalue) => {
+//   try {
+//     return await bcrypt.compare(planedata, hashevalue);
+//   } catch (e) {
+//     console.log('error in the code', e);
+//   }
+// };
+// changedfun(data).then((hashdata) => {
+//   console.log('Hashed Data:', hashdata);
+
+//   comparefunction(data, hashdata).then((ismatched) => {
+//     if (ismatched) {
+//       console.log('The value is matched');
+//     } else {
+//       console.log('The value is not matched');
+//     }
+  
+// });
+// });
+
+
+// nodemailer
+// const nodemailer=require('nodemailer');
+
+// const transporter=nodemailer.createTransport({
+
+//   host:"smpt.ethereal.email";
+//   port:460,
+//   secure:false
+
+//   auth:{
+//     host:"subarnadahal";
+//   }
+// })
